@@ -252,11 +252,9 @@ function carrito() {
     alert("Te esperamos pronto nuevamente")
 }
 function controlDeProductos(producto) {
-    if (producto <= 0) {
+    producto = producto + 1;
+    if (producto < 0) {
         alert("No puede quitar más productos");
-        return 0;
-    } else {
-        return producto;
     }
 }
 function agregarProducto(total, producto, nombreProducto) {
